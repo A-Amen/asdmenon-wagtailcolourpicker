@@ -25,9 +25,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    # wagtail
-    'wagtail.core',
+    'django.contrib.sites',
+    'wagtail',
     'wagtail.admin',
     'wagtail.documents',
     'wagtail.snippets',
@@ -39,7 +38,6 @@ INSTALLED_APPS = [
     'wagtail.contrib.forms',
     'wagtail.sites',
     'wagtail.contrib.modeladmin',
-    'wagtail.contrib.postgres_search',
     'wagtail.contrib.settings',
     'wagtail.contrib.search_promotions',
 
@@ -53,12 +51,13 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'wagtail.core.middleware.SiteMiddleware',
+    # 'wagtail.core.middleware.SiteMiddleware',
     'wagtail.contrib.redirects.middleware.RedirectMiddleware',
 ]
 
@@ -83,19 +82,15 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'example.wsgi.application'
+# WSGI_APPLICATION = 'example.wsgi.application'
 
 
 # Database
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'HOST': environ.get('RDS_HOSTNAME'),
-        'PORT': environ.get('RDS_PORT'),
-        'NAME': environ.get('RDS_DB_NAME'),
-        'USER': environ.get('RDS_USERNAME'),
-        'PASSWORD': environ.get('RDS_PASSWORD'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'example.db'
     }
 }
 
@@ -149,3 +144,5 @@ MEDIA_URL = "/media/"
 # Wagtail
 
 WAGTAIL_SITE_NAME = 'example.com'
+ALLOWED_HOSTS = ['*']
+SITE_ID=1
