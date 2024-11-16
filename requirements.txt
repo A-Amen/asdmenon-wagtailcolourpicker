@@ -1,5 +1,3 @@
 # The app itself
 -e .
-
-mock
-psycopg2-binary
+django-colorfield
