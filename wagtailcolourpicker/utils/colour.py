@@ -6,9 +6,9 @@ from wagtailcolourpicker.models import Color
 
 def get_colour_choices():
     colors = Color.objects.all()
-    print(tuple(colors))
-    print(tuple(get_setting('COLOURS').items()))
-    return tuple(get_setting('COLOURS').items())
+    # print()
+    # print(tuple(get_setting('COLOURS').items()))
+    return tuple((color.color_name, color.color) for color in colors)
 
 
 def get_feature_name(name):

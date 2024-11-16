@@ -20,3 +20,18 @@
  .Draftail-ToolbarButton[name^="COLOUR_"] {
      display: none;
  }
+
+
+.color-box {
+    width: 24px;
+    
+    position: relative;
+    height: 24px;
+    display: inline-block;
+    behavior: url(PIE.htc);
+    left: 5px;
+    top: 5px;
+    margin-left:20px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
