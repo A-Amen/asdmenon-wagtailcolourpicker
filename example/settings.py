@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'wagtail.contrib.modeladmin',
     'wagtail.contrib.settings',
     'wagtail.contrib.search_promotions',
-
+    'colorfield',
     'taggit',
 
     # app specific
@@ -146,3 +146,4 @@ MEDIA_URL = "/media/"
 WAGTAIL_SITE_NAME = 'example.com'
 ALLOWED_HOSTS = ['*']
 SITE_ID=1
+
