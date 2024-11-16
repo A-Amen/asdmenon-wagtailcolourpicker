@@ -2,9 +2,12 @@ from wagtail.admin.rich_text.editors.draftail import features as draftail_featur
 from wagtail.admin.rich_text.converters.html_to_contentstate import InlineStyleElementHandler
 
 from wagtailcolourpicker.conf import get_setting
-
+from wagtailcolourpicker.models import Color
 
 def get_colour_choices():
+    colors = Color.objects.all()
+    print(tuple(colors))
+    print(tuple(get_setting('COLOURS').items()))
     return tuple(get_setting('COLOURS').items())
 
 
@@ -58,8 +61,15 @@ def register_color_feature(name, colour, features):
 
 
 def register_all_colour_features(features):
-    for name, colour in get_setting('COLOURS').items():
-        register_color_feature(name, colour, features)
+    for color in Color.objects.all():
+        print(color)
+        print(color.color)
+        print(type(color.color))
+        register_color_feature(color.color_name, color.color, features)
+    # for name, colour in get_setting('COLOURS').items():
+    #     print(colour)
+    #     print(name)
+    #     register_color_feature(name, colour, features)
 
 
 def get_list_colour_features_name():
