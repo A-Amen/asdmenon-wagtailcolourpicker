@@ -2,6 +2,12 @@
 Changelog
 *********
 
+0.0.7
+-----
+* Update to support wagtail >=5.2
+* Update overall functionality using snippets instead of settings
+* Fix form widget to represent colors better
+
 0.0.6
 -----
 
