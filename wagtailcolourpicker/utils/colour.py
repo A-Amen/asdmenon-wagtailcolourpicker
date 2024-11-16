@@ -6,8 +6,6 @@ from wagtailcolourpicker.models import Color
 
 def get_colour_choices():
     colors = Color.objects.all()
-    # print()
-    # print(tuple(get_setting('COLOURS').items()))
     return tuple((color.color_name, color.color) for color in colors)
 
 
@@ -32,7 +30,7 @@ def register_color_feature(name, colour, features):
 
     control = {
         'type': type_,
-        'icon': get_setting('ICON'),
+        # 'icon': get_setting('ICON'),
         'description': colour,
         'style': {'color': colour}
     }
