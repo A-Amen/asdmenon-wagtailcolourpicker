@@ -1,6 +1,10 @@
 *********
 Changelog
 *********
+0.0.9
+-----
+* Bump
+
 0.0.8
 -----
 * Add dependencies

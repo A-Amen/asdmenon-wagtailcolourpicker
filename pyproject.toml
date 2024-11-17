@@ -1,6 +1,10 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "wagtailcolourpicker"
-version = "0.0.8"
+version = "0.0.9"
 authors = [
   { name="asdfmenon", email="dtymnn@gmail.com" },
 ]
@@ -16,6 +20,7 @@ dependencies = [
   "wagtail>=5.2",
   "django-colorfield>=0.11.0",
 ]
+
 
 [project.urls]
 Homepage = "https://github.com/A-Amen/asdmenon-wagtailcolourpicker"
