@@ -1,6 +1,6 @@
 [project]
 name = "wagtailcolourpicker"
-version = "0.0.7"
+version = "0.0.8"
 authors = [
   { name="asdfmenon", email="dtymnn@gmail.com" },
 ]
