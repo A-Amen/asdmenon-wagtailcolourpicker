@@ -1,6 +1,9 @@
 *********
 Changelog
 *********
+0.0.8
+-----
+* Add dependencies
 
 0.0.7
 -----

@@ -1,0 +1,22 @@
+[project]
+name = "wagtailcolourpicker"
+version = "0.0.7"
+authors = [
+  { name="asdfmenon", email="dtymnn@gmail.com" },
+]
+description = 'Wagtail text colour picker for DraftJS, with support for Wagtail > 5.2'
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "wagtail>=5.2",
+  "django-colorfield>=0.11.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/A-Amen/asdmenon-wagtailcolourpicker"
+Issues = "https://github.com/A-Amen/asdmenon-wagtailcolourpicker/issues"
