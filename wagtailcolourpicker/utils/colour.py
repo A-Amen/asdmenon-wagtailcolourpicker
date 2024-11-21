@@ -36,7 +36,6 @@ def register_color_feature(name, colour, features):
 
     control = {
         'type': name,
-        'icon': get_setting('ICON'),
         'description': colour,
         'style': {'color': colour}
     }

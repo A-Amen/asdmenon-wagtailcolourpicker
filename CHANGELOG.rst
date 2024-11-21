@@ -2,6 +2,10 @@
 Changelog
 *********
 
+0.1.5
+-----
+* Remove additional per colour icons from registering
+
 0.1.4
 -----
 * Make color names unique
