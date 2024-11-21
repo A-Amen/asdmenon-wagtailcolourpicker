@@ -2,6 +2,11 @@
 Changelog
 *********
 
+0.1.4
+-----
+* Make color names unique
+
+
 0.1.3
 -----
 * Fix feature name names
