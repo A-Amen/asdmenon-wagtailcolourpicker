@@ -32,7 +32,7 @@ Settings
    #### Picker icon setting
    ` WAGTAILCOLOURPICKER_ICON = ['...'] `
 
-   Use an icon name from the [wagtail registered icon list](https://docs.wagtail.org/en/stable/advanced_topics/icons.html) or an array of strings to use SVG paths for a 1024x1024 viewbox. [Example(right above inline styles scroll up)](https://docs.wagtail.org/en/stable/extending/extending_draftail.html#creating-new-inline-styles)
+   Use an icon name from the [wagtail registered icon list](https://docs.wagtail.org/en/stable/advanced_topics/icons.html) or register [your own icon with hooks](https://docs.wagtail.org/en/v5.2.7/advanced_topics/icons.html#add-a-custom-icon)
 
 Models
 ------

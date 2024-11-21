@@ -2,6 +2,16 @@
 Changelog
 *********
 
+0.1.2
+-----
+* Update README
+
+
+0.1.1
+-----
+* Change settings to default to the view svg icon
+
+  
 0.1.0
 -----
 * Add help text to model
