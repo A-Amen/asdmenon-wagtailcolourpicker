@@ -1,6 +1,12 @@
 *********
 Changelog
 *********
+
+0.1.0
+-----
+* Add help text to model
+* Add snippet add url to form popout
+
 0.0.9
 -----
 * Bump
