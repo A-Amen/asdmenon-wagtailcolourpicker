@@ -9,7 +9,7 @@ A colour picker for Wagtail's DraftJS editor.
 Installation
 ---
 `
-TODO
+pip install wagtailrichtextcolourpicker
 `
    
 Setup
