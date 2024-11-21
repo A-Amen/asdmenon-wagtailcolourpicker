@@ -3,7 +3,7 @@ from wagtailcolourpicker.models import Color
 from wagtailcolourpicker.forms import ColourForm
 from wagtailcolourpicker.utils.colour import (
     get_feature_name_list,
-    get_feature_name_upper,
+    
 )
 from wagtail.admin.admin_url_finder import AdminURLFinder
 from django.conf import settings
@@ -14,7 +14,7 @@ def chooser(request):
         if form.is_valid():
             feature_name = ""
             if form.cleaned_data.get("colour"):
-                feature_name = get_feature_name_upper(form.cleaned_data.get("colour"))
+                feature_name = form.cleaned_data.get("colour")
 
             all_features = get_feature_name_list()
 

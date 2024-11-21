@@ -2,6 +2,11 @@
 Changelog
 *********
 
+0.1.3
+-----
+* Fix feature name names
+* Fix draftail feature registry names
+
 0.1.2
 -----
 * Update README
