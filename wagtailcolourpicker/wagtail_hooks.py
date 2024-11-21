@@ -34,10 +34,10 @@ def register_textcolour_feature(features):
     # register the color picker
     feature_name = 'textcolour'
     type_ = feature_name.upper()
-
+    icon = get_setting("ICON")
     control = {
         'type': type_,
-        'icon': get_setting('ICON'),
+        'icon':icon,
         'description': _('Text Colour'),
     }
 
