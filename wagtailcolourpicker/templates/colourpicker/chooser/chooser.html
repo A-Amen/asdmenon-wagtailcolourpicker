@@ -6,6 +6,10 @@
 
 <div class="tab-content">
     <section id="form" class="active nice-padding">
+        <div class="missing">
+            <p>Missing a color in this list? Add a color <a href="{{ snippet_url }}">here</a>
+        </div>
+        
         <form class="colour-form" action="{% url 'wagtailcolourpicker:chooser' %}" method="POST" novalidate>
             {% csrf_token %}
             <ul class="fields">

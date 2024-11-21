@@ -35,3 +35,8 @@
     border-radius: 50%;
     border: 1px solid black;
 }
+
+.missing{
+    margin-top:20px;
+    margin-bottom:30px;
+}

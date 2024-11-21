@@ -33,16 +33,13 @@ def chooser(request):
         form = ColourForm()
     admin_url = Color.snippet_viewset.breadcrumbs_items[0]['url'] # weird way to get the admin base url.
     snippet_url = Color.snippet_viewset.url_prefix
-    print(admin_url)
-    print(snippet_url)
-    # print(settings.WAGTAILADMIN_URL)
     return render_modal_workflow(
         request,
         "colourpicker/chooser/chooser.html",
         None,
         {
             "form": form,
-            "lecontext": admin_url + snippet_url,
+            "snippet_url": admin_url + snippet_url,
         },
         json_data={"step": "chooser"},
     )
