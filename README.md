@@ -15,12 +15,12 @@ pip install wagtailrichtextcolourpicker
 Setup
 ---
 
-Add `colorpicker` and `wagtailcolourpicker` to INSTALLED_APPS in your settings. Ensure this is added after you have added all other django/wagtail modules.
+Add `colorfield` and `wagtailcolourpicker` to INSTALLED_APPS in your settings. Ensure this is added after you have added all other django/wagtail modules.
   
 ```python
    INSTALLED_APPS = [
       ...
-       'colorpicker'
+       'colorfield'
        'wagtailcolourpicker',
       ...
    ]
